@@ -1,0 +1,15 @@
+import uiautomator2 as u2
+d = u2.connect('emulator-5554')
+import time
+d(className='android.widget.FrameLayout').click()
+time.sleep(1)
+d(description='Settings').click()
+time.sleep(1)
+d(className='android.view.View').click()
+time.sleep(1)
+d(className='android.view.View').click()
+time.sleep(1)
+d(text='English').click()
+time.sleep(1)
+d(description='Back').click()
+time.sleep(1)

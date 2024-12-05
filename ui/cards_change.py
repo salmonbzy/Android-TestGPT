@@ -1,0 +1,15 @@
+import uiautomator2 as u2
+d = u2.connect('emulator-5554')
+import time
+d(description='Edit this location').click()
+time.sleep(1)
+d(text='Cards order, items displayed, animations').click()
+time.sleep(1)
+d(text='Precipitation nowcasting, Hourly forecast, Air quality, Pollen, Sun & moon, Daily forecast, Details').click()
+time.sleep(1)
+d(description='Delete this item').click()
+time.sleep(1)
+d(description='Delete this item').click()
+time.sleep(1)
+d(description='Back').click()
+time.sleep(1)

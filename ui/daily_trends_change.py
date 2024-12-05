@@ -1,0 +1,17 @@
+import uiautomator2 as u2
+d = u2.connect('emulator-5554')
+import time
+d(text='39').click()
+time.sleep(1)
+d(description='Edit this location').click()
+time.sleep(1)
+d(text='Global settings').click()
+time.sleep(1)
+d(className='android.view.View').click()
+time.sleep(1)
+d(className='androidx.recyclerview.widget.RecyclerView').click()
+time.sleep(1)
+d(className='androidx.recyclerview.widget.RecyclerView').click()
+time.sleep(1)
+d(description='Back').click()
+time.sleep(1)
